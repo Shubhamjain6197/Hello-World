@@ -1,4 +1,9 @@
 version: 2
 jobs:
   test:
+    docker:
+      - image: circleci/python:3.7.4
+    steps:
+      - checkout
+      - run: print("Hello World")
     
